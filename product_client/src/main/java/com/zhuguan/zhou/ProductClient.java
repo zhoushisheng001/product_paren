@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@FeignClient(name = "product-paren" ,fallback=ProductClient.ProductServiceClient.class )
+@FeignClient(name = "product-paren", fallback = ProductClient.ProductServiceClient.class)
 public interface ProductClient extends ProductApi {
 
     @Component

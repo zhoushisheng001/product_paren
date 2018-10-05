@@ -10,8 +10,8 @@ import java.util.List;
 
 public interface ProductApi {
 
-    @RequestMapping(value = "/product/getProductInfoById",method = RequestMethod.GET)
-    ResponseData<ProductDto> getProductInfoById (@RequestParam("id")String id);
+    @RequestMapping(value = "/product/getProductInfoById", method = RequestMethod.GET)
+    ResponseData<ProductDto> getProductInfoById(@RequestParam("id") String id);
 
     @RequestMapping(value = "/product/getgetProductInfoList")
     ResponseData<List<ProductDto>> getgetProductInfoList();

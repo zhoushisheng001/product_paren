@@ -7,6 +7,11 @@
     <artifactId>product_paren</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
+    <modules>
+        <module>product_api</module>
+        <module>product_client</module>
+        <module>product_privte</module>
+    </modules>
 
     <name>product_paren</name>
     <description>Demo project for Spring Boot</description>

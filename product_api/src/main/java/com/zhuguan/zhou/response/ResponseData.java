@@ -2,6 +2,7 @@ package com.zhuguan.zhou.response;
 
 /**
  * 返回对象
+ *
  * @param <T>
  */
 public class ResponseData<T> {
