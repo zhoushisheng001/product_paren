@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="product_api" />
+        <module name="product_client" />
         <module name="product_privte" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="product_api" target="1.8" />
+      <module name="product_client" target="1.8" />
       <module name="product_paren" target="1.8" />
       <module name="product_privte" target="1.8" />
     </bytecodeTargetLevel>

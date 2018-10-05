@@ -3,7 +3,17 @@ package com.zhuguan.zhou.model;
 /**
  * 商品服务类
  */
-public class ProductDto extends BaseDTO{
+public class ProductDto extends BaseDTO {
+
+    public ProductDto() {
+    }
+
+    public ProductDto(String id, String name, int price, int store) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.store = store;
+    }
 
     private String id;
     /**

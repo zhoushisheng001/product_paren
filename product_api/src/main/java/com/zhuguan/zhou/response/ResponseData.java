@@ -16,8 +16,9 @@ public class ResponseData<T> {
         return data;
     }
 
-    public void setData(T data) {
+    public ResponseData<T> setData(T data) {
         this.data = data;
+        return this;
     }
 
     public int getCode() {
