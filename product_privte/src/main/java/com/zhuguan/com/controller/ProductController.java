@@ -12,7 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 @RestController
 public class ProductController implements ProductApi {
@@ -37,7 +39,22 @@ public class ProductController implements ProductApi {
     public ResponseData<List<ProductDto>> getgetProductInfoList() {
         ResponseData<List<ProductDto>> resp = new ResponseData<>();
         resp.setData(productService.getgetProductInfoList()).ok();
+        /*try{
+           TimeUnit.SECONDS.sleep(2);
+        } catch (Exception e) {
+            logger.error(e.getMessage(),e);
+        }*/
         logger.info("==================>port:" + port + "<====================");
+        return resp;
+    }
+
+    @Override
+    public ResponseData<List<ProductDto>> getProductDtoByName(HttpServletRequest request) {
+        ResponseData<List<ProductDto>> resp = new ResponseData<>();
+        String token = request.getHeader("token");
+        String cookie = request.getHeader("Cookie");
+        logger.info("============token：" + token);
+        logger.info("============Cookie："+ cookie);
         return resp;
     }
 }

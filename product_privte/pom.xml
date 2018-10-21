@@ -51,6 +51,11 @@
             <artifactId>product_api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <!--链路追踪配置 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-sleuth</artifactId>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
